@@ -1,0 +1,16 @@
+payers = [75, 48, 65, 68, 74, 67, 71, 65, 90, 85, 79, 81, 87, 61, 73, 77, 76, 70, 79, 61, 63, 67, 89, 65, 73, 71, 78, 73, 61, 85, 62, 86, 80, 79, 68, 76, 87, 85, 71, 65, 75, 70, 61, 83, 65, 86, 61, 71]
+purchase_amount = 5
+
+profit = [] # создайте список
+
+for i in range(len(payers)):
+    profit.append(payers[i] * purchase_amount) # напишите цикл
+
+sum = 0
+
+for i in range(len(profit)):
+    sum = sum + profit[i]# найдите сумму
+
+average_income = sum / len(payers) # разделите сумму на количество элементов
+
+print(average_income) # выводим среднее на экран
